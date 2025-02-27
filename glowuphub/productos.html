@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowUp Hub - Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- fuentes de Google para el estilo del texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- Enlace CSS -->
+    <link rel="stylesheet" href="static/productos.css">
+</head>
+<body>
+
+    <!-- Barra de navegación fija en la parte superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- Nombre de la página que lleva al inicio -->
+            <a class="navbar-brand" href="index.html">GlowUp Hub</a>
+            
+            <!-- Botón de menú que se despliega en pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú desplegable con enlaces a otras secciones del sitio -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de productos recomendados -->
+    <div class="container mt-5 pt-5">
+        <h2 class="section-title">Productos Recomendados</h2>
+
+        <!-- Filtros para seleccionar el tipo de producto según tipo de piel -->
+        <div class="text-center my-4">
+            <div class="btn-group" role="group">
+                <!-- Botones para filtrar productos -->
+                <button type="button" class="btn btn-secondary">Todo</button>
+                <button type="button" class="btn btn-secondary">Piel Seca</button>
+                <button type="button" class="btn btn-secondary"><a id="piel-grasa" href="productos-piel-grasa.html">Piel Grasa</a></button>
+                <button type="button" class="btn btn-secondary">Piel Mixta</button>
+                <button type="button" class="btn btn-secondary">Piel Sensible</button>
+            </div>
+        </div>
+
+        <!-- Grid de productos con un diseño de tres columnas -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Cada "col" representa un producto individual dentro de una tarjeta -->
+            <div class="col">
+                <div class="card">
+                    <!-- Imagen del producto -->
+                    <img src="https://cdn.freshlycosmetics.com/media/34/bloomorchid_4_large_default.jpg?293985ee4d1b6d24c7cc78147e910d62" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <!-- Título y descripción del producto -->
+                        <h5 class="card-title">Hidratante Facial</h5>
+                        <p class="card-text">Crema hidratante para piel seca con ácido hialurónico.</p>
+                        <p><strong>25.99€</strong></p>
+                        <!-- Botones para ver más detalles y añadir al carrito -->
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segundo producto -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.freshlycosmetics.com/media/366/exfoliatingrose_4_large_default.jpg?de7be661cc9723f536c8797380b9ce69" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Gel Limpiador</h5>
+                        <p class="card-text">Espuma limpiadora ideal para piel grasa con control de brillo.</p>
+                        <p><strong>18.50€</strong></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tercer producto -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.freshlycosmetics.com/media/35/vitamincconcentrateserum_3_large_default.jpg?e43ee556087b7f7f95cd66a26eaa50b5" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Serum Antioxidante</h5>
+                        <p class="card-text">Vitamina C para dar luminosidad y unificar el tono de piel.</p>
+                        <p><strong>30.00€</strong></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuarto producto -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.freshlycosmetics.com/media/29/bodyflame_2_large_default.jpg?65c57819e3b846b1d92228798e9b669b" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Hidratante Reafirmante Corporal</h5>
+                        <p class="card-text">Crema hidratante reafirmante para el cuerpo.</p>
+                        <p><strong>20.99€</strong></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quinto producto -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.freshlycosmetics.com/media/59/hyperconcentrate_1_large_default.jpg?d45592502d879a44d8b881be4d795b7a" class="card-img-top" alt="Producto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Sérum Contorno de Ojos</h5>
+                        <p class="card-text">Sérum ultra concentrado para eliminar pequeñas arrugas y bolsas.</p>
+                        <p><strong>13.95€</strong></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sexto producto -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.freshlycosmetics.com/media/28/facialtoner_3_large_default.jpg?cd211957f12db4f124422bfd4d0cb93b" class="card-img-top" alt="Producto 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Tónico Facial</h5>
+                        <p class="card-text">Tónico facial para equilibrar el pH de la piel y cerrar los poros.</p>
+                        <p><strong>22,95€</strong></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página con enlaces a otras secciones del sitio -->
+    <footer>
+        <p>&copy; 2025 GlowUp Hub | Tu guía de belleza y skincare</p>
+        <a href="productos.html" class="footer-link">Productos</a> | <a href="contacto.html" class="footer-link">Contacto</a>
+    </footer>
+
+    <!-- Inclusión de Bootstrap JS para funcionalidades como el menú desplegable -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

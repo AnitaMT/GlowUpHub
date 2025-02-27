@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowUp Hub - Inicio</title>
+    <!-- Enlace a la hoja de estilos de Bootstrap para usar sus componentes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a fuentes de Google Fonts para mejorar la tipografía -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/index.css">
+</head>
+<body>
+
+    <!-- Barra de navegación fija en la parte superior de la página -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- Enlace que lleva al usuario a la página principal -->
+            <a class="navbar-brand" href="index.html">GlowUp Hub</a>
+            
+            <!-- Botón para el menú en dispositivos móviles (se oculta/expande al hacer clic) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Contenido del menú de navegación que aparece cuando el menú se expande -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Enlaces de navegación a diferentes páginas del sitio -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section: Sección principal de la página con un mensaje destacado -->
+    <header class="hero-section">
+        <div>
+            <!-- Título principal de la sección -->
+            <h1>Brilla con tu mejor piel ✨</h1>
+            <!-- Subtítulo descriptivo -->
+            <p>Descubre productos y rutinas perfectas para ti.</p>
+            <!-- Botón de llamado a la acción (CTA) para explorar productos -->
+            <a href="productos.html" class="btn btn-primary">Explorar</a>
+        </div>
+    </header>
+
+    <!-- Carrusel de Productos Populares: Muestra productos destacados en un carrusel -->
+    <div id="carouselProductos" class="carousel slide container my-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Primer elemento del carrusel (activo por defecto) -->
+            <div class="carousel-item active">
+                <img src="https://fotopiel.com/cdn/shop/articles/fotopiel-rutina-de-skincare-cuidado-facial.jpg?v=1681237955" class="d-block w-100" alt="Producto 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Parches de ácido hialurónico</h4>
+                    <a href="productos.html" class="btn btn-primary">Comprar ahora</a>
+                </div>
+            </div>
+            <!-- Segundo elemento del carrusel -->
+            <div class="carousel-item">
+                <img src="https://images.kikocosmetics.com/lf2wbbijeo86/1Vx6ers0mjdfH9ESN9PhPl/833ca425fcb8ee5f30960ecfd43d3ef4/Info_BeautyServices_NEW-Landing-Header_MakeupAndGo.jpg?w=3840&fm=webp" class="d-block w-100" alt="Producto 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Eyeliner de colores vibrantes</h4>
+                    <a href="productos.html" class="btn btn-primary">Comprar ahora</a>
+                </div>
+            </div>
+            <!-- Tercer elemento del carrusel -->
+            <div class="carousel-item">
+                <img src="https://assets.foreo.com/files/static/images/skincare-routine.png" class="d-block w-100" alt="Producto 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Ofertas en rutinas de skincare</h4>
+                    <a href="productos.html" class="btn btn-primary">Comprar ahora</a>
+                </div>
+            </div>
+        </div>
+        <!-- Botones de control para navegar entre los elementos del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Sección de Artículos Destacados: Muestra artículos relevantes en formato de tarjetas -->
+    <section id="blog" class="container my-5">
+        <h2 class="section-title">Artículos Destacados</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Primera tarjeta -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://news.northeastern.edu/wp-content/uploads/2024/01/Skincare1400.jpg" class="card-img-top" alt="Artículo 1" width="400" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Rutina de Skincare Básica</h5>
+                        <p class="card-text">Descubre los pasos esenciales para cuidar tu piel correctamente.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda tarjeta -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.shopify.com/s/files/1/0917/8416/files/bare-faced-facial-skin-care_1024x1024.jpg?v=1629353715" class="card-img-top" alt="Artículo 2" width="400" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Cuál es tu tipo de piel?</h5>
+                        <p class="card-text">Aprende a identificar tu tipo de piel y qué productos usar.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tercera tarjeta -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://honeyandcoco.ca/cdn/shop/articles/rsz_honey_coco_jan202023_0017_720x.jpg?v=1674764329" class="card-img-top" alt="Artículo 3" width="400" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Los mejores ingredientes naturales</h5>
+                        <p class="card-text">Descubre qué ingredientes naturales son ideales para tu piel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer: Pie de página con información de derechos de autor y enlaces útiles -->
+    <footer>
+        <p>&copy; 2025 GlowUp Hub | Tu guía de belleza y skincare</p>
+        <a href="#productos" class="footer-link">Productos</a> | <a href="#contacto" class="footer-link">Contacto</a>
+    </footer>
+
+    <!-- Script de Bootstrap para funcionalidades como el carrusel -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

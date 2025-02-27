@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowUp Hub - Productos</title>
+    
+    <!-- Inclusión de la hoja de estilos de Bootstrap para darle formato y diseño al sitio -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Enlaces de Google Fonts para el estilo del texto -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- CSS de la página de productos -->
+    <link rel="stylesheet" href="static/productos.css">
+</head>
+<body>
+
+    <!-- Barra de navegación fija en la parte superior de la página -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- Enlace que lleva al usuario a la página principal -->
+            <a class="navbar-brand" href="index.html">GlowUp Hub</a>
+            
+            <!-- Botón para el menú en dispositivos móviles (se oculta/expande al hacer clic) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Contenido del menú de navegación que aparece cuando el menú se expande -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Enlaces de navegación a diferentes páginas del sitio -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal de la página de productos -->
+    <div class="container mt-5 pt-5">
+        <!-- Título de la sección de productos -->
+        <h2 class="section-title">Productos Recomendados</h2>
+
+        <!-- Filtros de productos para clasificar por tipo de piel -->
+        <div class="text-center my-4">
+            <div class="btn-group" role="group">
+                <!-- Botones para filtrar los productos según el tipo de piel -->
+                <button type="button" class="btn btn-secondary"><a href="productos.html" class="nav-link">Todo</a></button>
+                <button type="button" class="btn btn-secondary">Piel Seca</button>
+                <button type="button" class="btn btn-secondary">Piel Grasa</button>
+                <button type="button" class="btn btn-secondary">Piel Mixta</button>
+                <button type="button" class="btn btn-secondary">Piel Sensible</button>
+            </div>
+        </div>
+
+        <!-- Grid de productos (utilizando el sistema de columnas de Bootstrap) -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Cada "col" es un producto individual con su respectiva imagen, nombre y precio -->
+            <div class="col">
+                <div class="card">
+                    <!-- Imagen del producto -->
+                    <img src="https://cdn.freshlycosmetics.com/media/346/azelaicbodytreatment_1_large_default.jpg?44749abb3c9eef483ba2b304dd676671" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <!-- Título del producto -->
+                        <h5 class="card-title">Sérum anti-acné</h5>
+                        <!-- Descripción corta del producto -->
+                        <p class="card-text">Sérum en formato gel para combatir el acné.</p>
+                        <!-- Precio del producto -->
+                        <p><strong>25.99€</strong></p>
+                        <!-- Botón para ver más detalles del producto -->
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segundo producto -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.freshlycosmetics.com/media/84/blueradiance_2_large_default.jpg?c1350a3995e51f2eaaf5ac2d5590ef05" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Sérum exfoliante</h5>
+                        <p class="card-text">Sérum facial de ácido mandélico para eliminar puntos negros.</p>
+                        <p><strong>18.50€</strong></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tercer producto -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.freshlycosmetics.com/media/404/salicyliccleanser_1_large_default.jpg?49d86ff7a0b94968f5c9617cba1dc317" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Limpiador Facial Ácido Salicílico</h5>
+                        <p class="card-text">Limpiador facial con ácido salicílico para exfoliar y renovar la piel.</p>
+                        <p><strong>30.00€</strong></p>
+                        <!-- Enlace a la página de detalles del producto -->
+                        <a href="detalles-producto.html" class="btn btn-primary">Ver más</a>
+                        <!-- Botón para añadir al carrito (aún no funcional) -->
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuarto producto -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://www.druni.es/media/catalog/product/5/0/5033953_4.jpg?quality=80&fit=bounds&height=700&width=700&canvas=700:700" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mascarilla Facial Exfoliante</h5>
+                        <p class="card-text">Mascarilla facial exfoliante con ácido salicílico.</p>
+                        <p><strong>20.99€</strong></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quinto producto -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://media.farmafamily.com/product/freshly-emerald-clay-facial-mask-50ml-800x800_hqHkokp.jpg" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mascarilla Facial Purificadora</h5>
+                        <p class="card-text">Mascarilla facial purificadora. Reduce el tamaño de los poros y elimina células muertas.</p>
+                        <p><strong>20.99€</strong></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sexto producto -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://cdn.freshlycosmetics.com/media/28/facialtoner_3_large_default.jpg?cd211957f12db4f124422bfd4d0cb93b" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Tónico Facial</h5>
+                        <p class="card-text">Tónico facial para equilibrar el pH de la piel y cerrar los poros.</p>
+                        <p><strong>22,95€</strong></p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página del sitio -->
+    <footer>
+        <p>&copy; 2025 GlowUp Hub | Tu guía de belleza y skincare</p>
+        <!-- Enlaces de navegación en el pie de página -->
+        <a href="productos.html" class="footer-link">Productos</a> | <a href="contacto.html" class="footer-link">Contacto</a>
+    </footer>
+
+    <!-- Inclusión del archivo JS de Bootstrap para las funcionalidades interactivas -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
